@@ -5,33 +5,50 @@ body{
 }
 
 .card{
-    margin:20% auto;
+    margin:10% auto;
     width:50%;
     text-align:center;
     background-color:hsl(0, 0%, 12%);
     padding: 10px 30px 10px 30px;
     border-radius:10px;
+ 
 }
 
 .card>.links-container>div{
     border-radius:10px;
     background-color:hsl(0, 0%, 20%);
     margin-bottom:20px;
-    padding:10px;
+    padding:20px 0 20px 0;
     color:hsl(0, 0%, 100%);
-    width:50%;
+
     margin:10% auto;
+    transition:0.3s;
+    font-size:smaller;
 
-
-    
 
 }
+
+.card>.links-container>div:hover{
+    background-color:hsl(75, 94%, 57%);
+    transition:0.2s;
+    margin: 14% auto 14% auto;
+    
+}
+.card>.links-container>div:focus-within{
+    background-color:hsl(75, 94%, 57%);
+    transition:0.2s;
+    margin: 14% auto 14% auto;
+    
+}
+
+
 .links-container{
     align-items:center;
     margin:0 auto;
+    
 }
 p{
-    margin:30px;
+    
     color:hsl(0, 0%, 100%);
     font-family:'Outfit';
 }
@@ -55,9 +72,26 @@ h3{
     font-family:'Inter';
 }
 
-@media only screen and (max-width:1440px) {
+@media screen and (max-width:1440px) {
+    .card>.links-container>div{
+
+        margin-bottom:20px;
+        padding:10px 0 10px 0;
+        color:hsl(0, 0%, 100%);
+    
+        margin:20px auto;
+
+    
+    
+    }
+
     .card{
-        margin: 100px auto;
-        width:25%;
+        padding-bottom:30px;
+        width:30%;
+        margin:5% auto;
+    }
+
+    .links-container{
+        width:60%;
     }
 }
